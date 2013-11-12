@@ -1,4 +1,4 @@
-package battleship.runners;
+package battleship.run;
 
 import battleship.Cell;
 import battleship.Ship;
