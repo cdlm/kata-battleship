@@ -7,14 +7,14 @@ public class Example {
 	public static final int DIMX = 8, DIMY = 6;
 
 	public static void main(String[] args) {
-		Cell[][] grid = new Cell[DIMX][DIMY];
+		Cell[][] grid = new Cell[DIMY][DIMX];
 		for (int i = 0; i < DIMX; i++) {
 			for (int j = 0; j < DIMY; j++) {
-				grid[i][j] = new Cell();
+				grid[j][i] = new Cell();
 			}
 		}
 
-		Ship c = new Ship("Cruiser", 4, Ship.Orientation.HORIZONTAL);
+		Ship c = new Ship("Cruiser", 4, Ship.Orientation.VERTICAL);
 		c.placeOnGrid(grid, 2, 0);
 
 		Ship f = new Ship("Frigate", 3, Ship.Orientation.VERTICAL);

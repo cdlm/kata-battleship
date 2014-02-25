@@ -81,7 +81,7 @@ public class TextMode {
             MatchResult answer = askNextMove();
             if (answer.group(0).equals("Q")) {
                 showGrid(grid, true);
-                System.out.println("Ok, bye! Here's the final state of affairs:");
+                System.out.println("Ok, bye!");
                 break;
             } else {
                 char letter = answer.group(1).toUpperCase().charAt(0);
